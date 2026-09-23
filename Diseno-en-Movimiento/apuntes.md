@@ -1,25 +1,20 @@
-ctrl + n : nueva composición
-ctrl + y : insertar sólido
-ctrl + alt + shift + t : insertar texto
-ctrl al mover algo: moverlo imantado
-F9 en key frame : insertar deswaceleración
+## Shortcuts----------------
 
-y : abrir panel de punto de anclaje
-
-
-
-ctrl + shift + c : precompo (cambiar propiedades de imagen original a como se ve en la composición)
+|ctrl + n|nueva composición|ctrl al mover algo|moverlo imantado|
+|-|-|-|-|
+|ctrl + y|insertar sólido|F9 en key frame|activar curvas de velocidad en fotogramas|
+|ctrl + alt + sft + t|insertar texto|ctrl + shift + y|panel de ajustes de capa (el que sale cuando lo creas)|
+|ctrl + shift + c|precompo (cambiar propiedades de imagen original a como se ve en la composición)|||
 
 
 
-shift : abrir (agregar) propiedad abierta
-r : rotación
-t : opacidad
-p : posición
+teclas
 
-s : escala
-
-m m : abrir propiedades de mascara
+|shift : abrir (agregar) propiedad abierta|r : rotación|
+|-|-|
+|t : opacidad|p : posición|
+|s : escala|m m : abrir propiedades de mascara|
+|u : mostrar fotogramas activos IMPORTANTEg|y : abrir panel de punto de anclaje|
 
 
 
