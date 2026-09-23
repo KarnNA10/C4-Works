@@ -24,7 +24,7 @@ teclas
 
 |gradación de degradado|insertar gradiente en sólido|
 |-|-|
-|||
+|retractor simple|image inflation|
 
 
 
