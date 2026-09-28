@@ -29,3 +29,13 @@ teclas
 
 
 
+## Export----------------
+
+Modulo de salida : Extensión
+
+&#x09;- H264 (mp4)
+
+&#x09;- QuiqTime
+
+
+
