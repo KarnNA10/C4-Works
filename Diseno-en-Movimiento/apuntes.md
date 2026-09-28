@@ -5,7 +5,7 @@
 |ctrl + y|insertar sólido|F9 en key frame|activar curvas de velocidad en fotogramas|
 |ctrl + alt + sft + t|insertar texto|ctrl + shift + y|panel de ajustes de capa (el que sale cuando lo creas)|
 |ctrl + shift + c|precompo (cambiar propiedades de imagen original a como se ve en la composición)|ctrl + alt + t|Agregar capa de ajustes|
-|C + ALT<br />C + ALT + Click der<br />C + ALT + click izq<br />C + ALT + ruedita|abrir cámara<br />mover<br />rotar<br />subir-bajar|||
+|C + ALT<br />C + ALT + Click der<br />C + ALT + click izq<br />C + ALT + ruedita|abrir cámara<br />mover<br />rotar<br />subir-bajar|ctrl + shift + h|Ocultar vectores de selección, dirección, las rayitas de colores xyz|
 
 
 
