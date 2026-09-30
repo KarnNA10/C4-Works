@@ -23,20 +23,20 @@ teclas
 
 
 ## Efectos----------------
-
 |gradación de degradado|insertar gradiente en sólido|
 |-|-|
 |retractor simple|image inflation|
 |tiempo de posterización|cambiar velocidad de fotogramas|
+|Código de tiempo*|reloj 00:00:00|
+
+*El tiempo debe agregarse a una capa de ajustes en la composición
 
 ###### Para el margen negro con margen:
-
 >nuevo sólido
 
 >ponerle el fondo negro
 
 >aceptar
-
 >Herramienta rectángulo
 
 >Dibujar el espacio de los planos
