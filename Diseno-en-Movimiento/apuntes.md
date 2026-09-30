@@ -29,7 +29,19 @@ teclas
 |retractor simple|image inflation|
 |tiempo de posterización|cambiar velocidad de fotogramas|
 
+###### Para el margen negro con margen:
 
+>nuevo sólido
+
+>ponerle el fondo negro
+
+>aceptar
+
+>Herramienta rectángulo
+
+>Dibujar el espacio de los planos
+
+> Capa de rectángulo en compo > máscara > invertido
 
 ## Vistas----------------
 
