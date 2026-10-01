@@ -1,0 +1,140 @@
+<html><head></head><body>
+  <!-- https://licenciatura.univa.edu.mx/mod/assign/view.php?id=783732 -->
+<style>
+/* html {
+	margin: 40px;
+  margin-top: 0;
+} */
+table,tr,td,th{
+	border: 1px solid #000;
+}
+td {
+	padding: 10px;
+}
+.tit {
+	font-size: large;
+	background: #d9d6e7;
+	color: black;
+}
+.en-img-mundo {
+	width: 5vw;
+	/* height: 100px; */
+	margin: 5px;
+}
+img{
+  max-width: 60vw;
+}
+</style>
+
+<h1>Calcula tu huella ecológica, hídrica y de carbono</h1>
+<h3>Karen Navarro Arroyo, 0126310361</h3>
+<div id="time">
+    </div>
+    <script>
+        function updateTime() {
+            const date = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const time = date.toLocaleTimeString();
+            const day = date.toLocaleDateString(undefined, options);
+            document.getElementById('time').innerHTML =
+                `${day}, ${time}`;}
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+
+<hr><br>
+
+<table>
+  <tbody>
+  <tr>
+    <th colspan="2" class="tit">1. Huella ecológica</th>
+  </tr>
+  <tr>
+    <td class="subtit">Resultados</td>
+    <td class="subtit">Compromisos</td>
+  </tr>
+  <tr>
+    <td>
+
+      <section style="column-count: 3;"><div id="en-inicio"><h3>Si todo el mundo viviera como tú, necesitaríamos 2.5 planetas Tierra para vivir</h3><div id="en-mundos"><img class="en-img-mundo" src="src/mundo-4-4.png"><img class="en-img-mundo" src="src/mundo-4-4.png"><img class="en-img-mundo" src="src/mundo-2-4.png"></div><h1>Tu edad es </h1><h4>de entre 17 y 36 años</h4><p>La huella ecológica a lo largo de la edad tiene forma de campana. Es máxima en la edad adulta y disminuye en la infancia y la tercera edad. ¡Descontando la impresionante huella ecológica de nuestros primeros años de vida, solamente en pañales de usar y tirar!</p><h1>La casa en la que vives </h1><h4>es una vivienda en un bloque de pisos</h4><p>Disponer de servicios comunes de agua y energía reduce mucho la huella ecológica de las viviendas dentro de un bloque de pisos. No obstante, las necesidades de energía variarán mucho según cuál sea la posición del piso en el edificio y su orientación. Por ejemplo, no es lo mismo un bajo orientado al norte que un último piso o un ático orientado al sur, que garantiza una fuerte insolación y tal vez problemas para mantener la casa fresca en verano.</p><h1>En tu casa viven</h1><h4>tres personas</h4><p>Te aproximas al tamaño medio de los hogares en España, que es de 2,5 personas (2021). Eso implica que será fácil ponerse de acuerdo para reducir el tamaño de vuestra huella ecológica.</p><h1>El tamaño de tu hogar </h1><h4>es de más de 121 m2</h4><p>Las casas grandes, como la tuya, pueden ser grandes sumideros de energía. Por ejemplo, si necesitan más de siete u ocho radiadores de calefacción. Es una buena oportunidad para revisar si están colocados los termostatos necesarios, si las paredes y los techos están bien aislados, etc.</p><h1>En materia de calefacción...</h1><h4>no tienes ningún sistema de calefacción</h4><p>A no ser que vivas en una zona extremadamente cálida la carencia de cualquier sistema de calefacción indica un serio problema de pobreza energética.
+      La pobreza energética es una lacra de nuestra sociedad que debe ser combatida. </p><h1>¿Aire acondicionado?</h1><h4>No tienes aire acondicionado</h4><p>Existen infinidad de soluciones para refrigerar nuestra casa en los meses de canícula sin necesidad de gastar dinero en una costosa instalación de aire acondicionado. Refrescar la casa al amanecer, evitar la entrada del sol, usar ventiladores y evaporadores, son algunas de ellas.</p><h1>Tu estilo de uso de la climatización es...</h1><h4>planet-friendly: usas la calefacción y/o el aire acondicionado con mucha moderación</h4><p>Tu habilidoso comportamiento con la climatización contribuye a reducir tu huella ecológica y también te hace ahorrar mucho dinero.</p><h1>Tus ventanas</h1><h4>no están bien aisladas</h4><p>Las ventanas de tu casa son sumideros por donde se escapa la energía que tan cara te cuesta. Pero hay soluciones. Si no puedes llegar a instalar dobles ventanas o dobles cristales, un poco de bricolaje impedirá las peores fugas.</p><h1>Etiqueta energética </h1><h4>No sabes si tus aparatos son economizadores o no</h4><p>Si ninguno de tus electrodomésticos tiene etiqueta energética superior, comienza por el frigorífico. Si no tiene etiqueta energética superior o no tiene etiqueta energética de ninguna clase, lo más seguro es que sea un modelo antiguo que está derrochando energía las 24 horas del día. Si es de tamaño estándar te saldrá a cuenta cambiarlo y si es posible por uno de tamaño menor. Lo amortizarás en cuatro o cinco años.
+      </p><h1>Estos son tus medios de transporte favoritos</h1><h4>El coche es una de tus principales opciones para moverte </h4><p>El coche de motor de combustión es la opción más cara y más contaminante que existe para el transporte. Investiga otras opciones si quieres reducir el tamaño de tu huella ecológica.
+      
+      </p><h1>Estos son tus medios de transporte favoritos</h1><h4>Caminar</h4><p>Caminar no es una excentricidad, es otra opción para la movilidad en las ciudades. Al igual que en el caso de la bicicleta, ahorras mucho dinero, no molestas a nadie con ruido, humos y ocupación de la vía pública y además tu salud mejora notablemente.</p><h1>Tu coche</h1><h4>es un modelo con pocas pretensiones</h4><p>No hagas mucho caso de la publicidad de coches ecológicos. El principal factor que determina el consumo del vehículo es el tamaño: coche pequeño, coche economizador y menos contaminador.</p><h1>La compañía en tu coche</h1><h4>no te parece mal, a veces vas acompañado</h4><p>Compartes tu coche con regularidad, puedes hacerlo con más frecuencia y más seguridad utilizando alguna aplicación.</p><h1>La compra</h1><h4>la haces una vez a la semana, más o menos</h4><p>Ir a la compra con frecuencia y en tiendas próximas a tu domicilio estimula el comercio local y te permite ahorrar dinero y buscar las mejores calidades de los productos.</p><h1>Tu relación con las plantas</h1><h4>es sólida, tienes un jardincito para cuidar</h4><p>Como la mayoría de los seres humanos, disfrutas de las plantas, ya sea en algunas macetas o en un pequeño jardín. Recuerda que el consumo de agua de una casa está en relación directa con la cantidad de plantas que cuidas: practica el riego economizador.</p><h1>Sistemas de riego economizador</h1><h4>No los usas, corres peligro de derrochar mucha agua</h4><p>Ya estás tardando en ir a tu proveedor habitual de útiles de jardinería para contratar algún sistema de riego economizador, apropiado para el tamaño de tu vergel. Ahorrarás agua y algo de dinero, pero lo principal es que alejarás la amenaza de una posible sequía.</p><h1>Fontanería economizadora</h1><h4>Enhorabuena, tienes instalados varios sistemas de fontanería economizadora</h4><p>Parece que tienes controlada la fontanería de tu casa con la instalación de varios artilugios economizadores de agua. No olvides hacer un uso prudente del WC, el principal elemento de consumo de agua en una casa.</p><h1>Los logos tóxicos en los productos que compras</h1><h4>te preocupan, rechazas los productos que los llevan</h4><p>No te gustan las calaveras ni los peces muertos en las etiquetas de los productos de limpieza o bricolaje que compras. Es una buena costumbre, porque todo lo que es tóxico para el medio ambiente también lo es para ti.</p><h1>La carne y tú</h1><h4>Te agrada que figure en el menú con regularidad</h4><p>Como la mayoría de las personas combinas la carne con las verduras para obtener una dieta sana. Reducir tu consumo de carne te permitirá comprar la de mejor calidad y reducir mucho tu huella ecológica. Utiliza las recetas tradicionales para hacer sabrosos guisos con una proporción de carne / vegetales adecuada (por ejemplo, 25% de carne y 75% de vegetales).</p><h1>Los contenedores para la separación de residuos en casa</h1><h4>te parecen lógicos y tienes los habituales</h4><p>Algo sí separas, por ejemplo, el papel y cartón o el vidrio. Añade más contenedores de separación, hasta tener la colección completa: papel, vidrio, envases ligeros, materia orgánica y otros especiales (pilas, lámparas, etc.).</p><h1>Cuando vas al mercado,</h1><h4>combinas la compra de alimentos envasados y frescos</h4><p>Combinas la compra de alimentos frescos con la de empaquetados, como hacemos la mayoría de las personas. Podrás aumentar la proporción de productos frescos si te acostumbras a cocinar con más frecuencia. Ten cuidado que cocinar se puede convertir en un vicio adictivo.</p></div></section>
+    </td>
+    <td style="display: flex;width: 24vw;">- Me gustaría compartir mi carro con otras personas para ir a ;a universidad, además de ir a lugares cercanos a pie o aprender a andar en bicicleta.<br><br><br>- Debo fijarme más en las etiquetas de consumo de energía de los aparatos eléctricos.</td>
+  </tr>
+</tbody></table>
+
+<!-- CARBONO ------------------------------------------------------------------------------- -->
+<br><br>
+
+<table>
+  <tbody>
+  <tr>
+    <th colspan="2" class="tit">2. Huella de carbono</th>
+  </tr>
+  <tr>
+    <td class="subtit">Resultados</td>
+    <td class="subtit">Compromisos</td>
+  </tr>
+  <tr>
+    <td>
+      <figure>
+        <img src="2.png">
+        <figcaption>https://www.fundacionaquae.org/calculadora-carbono/</figcaption>
+      </figure>
+    </td>
+    <td>- Optaré por una dieta reducida en carnes, pero también evitaré consumir productos como leche de almendras, ya que está demostrado que producirla consume demasiada agua e impacta negativamente la biodiversidad.
+      <br><br>-También me gustaría comprar más productos frescos de tiendas locales en lugar de alimentos ultraprocesados.
+    </td>
+  </tr>
+</tbody></table>
+
+<table>
+  <tbody>
+  <tr>
+    <th colspan="2" class="tit">3. Huella hídrica</th>
+  </tr>
+  <tr>
+    <td class="subtit">Resultados</td>
+    <td class="subtit">Compromisos</td>
+  </tr>
+  <tr>
+    <td style="width: 60vw;">
+      <figure>
+        <img src="3.png">
+        <figcaption>https://www.fundacionaquae.org/calculadora-hidrica/</figcaption>
+      </figure>
+    </td>
+    <td>- Creo que aún puedo reducir el tiempo que tardo en banarme, además de poder reciclar el agua para regar las plantas, agua para el trapeador, etc.<br><br>
+      - Puede que no necesite lavar el carro tan seguido
+      <br>- Debo ser más agresiva con el boicot a las empresas que usas <i>nuestros</i> recursos a sus anchas (por ejemplo, CocaCola. Lo cual va a ser difícil considerando que es quien nos surte los garrafones de agua Ciel).
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css"></style></body></html>
