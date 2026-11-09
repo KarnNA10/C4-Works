@@ -1,0 +1,157 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.3)  3 NOV 2026 23:27
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/prisc/Documents/_TRABAJOS/2_04_Guion cinematogrÃ¡fico/01_Guion-Caballero-Dragona/main.tex"
+(c:/Users/prisc/Documents/_TRABAJOS/2_04_Guion cinematogrÃ¡fico/01_Guion-Caballero-Dragona/main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+) (C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-12-24 L3 programming layer (loader) 
+ (C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count283
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+\c@scenenumber=\count284
+\c@shotnumber=\count285
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 56.
+ (C:\Users\prisc\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 59.
+ [1
+
+{C:/Users/prisc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/prisc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+Overfull \hbox (2.02466pt too wide) in paragraph at lines 119--119
+[]\T1/pcr/m/n/12 Mira a los lados; de un lado de la calle se ve a los
+ []
+
+
+Overfull \hbox (41.99982pt too wide) in paragraph at lines 119--119
+\T1/pcr/m/n/12 panaderos haciendo pan en la panadería, del otro, una senora
+ []
+
+
+Overfull \hbox (23.62465pt too wide) in paragraph at lines 119--119
+[]\T1/pcr/m/n/12 Todo parece estar en orden, hasta que pasa por un grupo
+ []
+
+
+Overfull \hbox (49.19981pt too wide) in paragraph at lines 119--119
+\T1/pcr/m/n/12 de senoras que están murmurando preocupadas algo de un dragón
+ []
+
+
+Overfull \hbox (52.42464pt too wide) in paragraph at lines 119--119
+[]\T1/pcr/m/n/12 Mientras el caballero camina, escucha otras cosas parecidas
+ []
+
+
+Overfull \hbox (13.19983pt too wide) in paragraph at lines 119--119
+\T1/pcr/m/n/12 acerca de un dragón que vive en una cueva de una montana
+ []
+
+
+Overfull \hbox (41.99982pt too wide) in paragraph at lines 119--119
+\T1/pcr/m/n/12 El Caballero mira cómo el campesino se va corriendo, después
+ []
+
+
+Overfull \hbox (45.22464pt too wide) in paragraph at lines 124--124
+[]\T1/pcr/m/n/12 El caballero golpea las riendas del caballo, este relincha
+ []
+
+
+Overfull \hbox (2.02466pt too wide) in paragraph at lines 124--124
+[]\T1/pcr/m/n/12 A lo lejos, se ve al caballero cabalgando con el sol
+ []
+
+
+Overfull \hbox (30.82465pt too wide) in paragraph at lines 127--127
+[]\T1/pcr/m/n/12 De nuevo el caballero cabalgando con el bosque de fondo. 
+ []
+
+
+Overfull \hbox (2.02466pt too wide) in paragraph at lines 130--130
+[]\T1/pcr/m/n/12 Caballero cabalgando cuesta arriba en dirección a la
+ []
+
+
+Overfull \hbox (16.42465pt too wide) in paragraph at lines 140--140
+[]\T1/pcr/m/n/12 El Caballero llega finalmente a donde vive la Dragona. 
+ []
+
+
+Overfull \hbox (52.42464pt too wide) in paragraph at lines 140--140
+[]\T1/pcr/m/n/12 Entrando lentamente en la cueva, en la obscuridad, aparecen
+ []
+
+[1] [2] (main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 875 strings out of 467871
+ 15284 string characters out of 5418376
+ 439733 words of memory out of 5000000
+ 29799 multiletter control sequences out of 15000+600000
+ 633084 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 58i,5n,71p,397b,225s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/prisc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/prisc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on main.pdf (3 pages, 35303 bytes).
+PDF statistics:
+ 23 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

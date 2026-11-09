@@ -1,0 +1,169 @@
+\documentclass[titlepage,12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{courier}
+\renewcommand{\rmdefault}{\ttdefault}
+\usepackage{xparse, expl3}
+
+\newcommand{\filmtitle}[1]{\begin{center}\centering "\underline{#1}"\end{center}}
+
+\newcommand{\stagedirection}[1]{\MakeUppercase{#1}\par\vspace{0.5cm}}
+\newcommand{\sd}[1]{\stagedirection{#1}}
+
+\NewDocumentCommand{\scenedescription}{ >{\SplitList{.}} m }{%
+  \ProcessList{#1}{\addnewline}%
+}
+
+\newcommand{\addnewline}[1]{%
+  #1.\par
+}
+
+\newcounter{scenenumber}
+\newcounter{shotnumber}
+\setcounter{scenenumber}{0}
+\setcounter{shotnumber}{0}
+
+\NewDocumentCommand{\getscenenumber}{}{
+  \ifnum\value{shotnumber}=0
+    \thescenenumber
+  \else
+    \thescenenumber-\Alph{shotnumber}
+  \fi
+}
+
+\newcommand{\barescene}[1]{
+    \stepcounter{scenenumber}%
+    \setcounter{shotnumber}{0}%
+    \textbf{\MakeUppercase{#1}\hfill\getscenenumber}%
+    \par%
+}
+\newcommand{\scene}[2]{\barescene{#1}\scenedescription{#2}}
+\newcommand{\bareshot}[1]{
+    \stepcounter{shotnumber}%
+    \textbf{\MakeUppercase{#1}\hfill\getscenenumber}\par%
+}
+\newcommand{\shot}[2]{\bareshot{#1}\scenedescription{#2}}
+
+\newcommand{\dialogue}[2]{
+    \vspace{-0.25cm}%
+    \begin{center}%
+        \MakeUppercase{\textbf{#1}}\\
+        \scenedescription{#2}%
+    \end{center}%
+    \vspace{-0.25cm}%
+}
+
+\begin{document}
+\begin{titlepage}
+	\centering
+    \filmtitle{El Caballero y la Dragona}
+    \vspace{1cm}
+    by\\
+    \vspace{1cm}
+    Karen Navarro\\
+    \vspace{3cm}
+    Based on screenplay\\
+    \vspace{0.5cm}
+    by\\
+    \vspace{0.5cm}
+    Karen Navarro\\
+    \vspace{1cm}
+    Story by\\
+    \vspace{0.5cm}
+    Karen Navarro
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+\filmtitle{El Caballero y la Dragona}
+
+%⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⡿⢿⣿⣛⣟⣿⡿⢿⢿⣷⣦⡀⠀⠀⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⢰⣯⣷⣿⣿⣿⢟⠃⢿⣟⣿⣿⣾⣷⣽⣺⢆⠀⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⢸⣿⢿⣾⢧⣏⡴⠀⠈⢿⣘⣿⢿⣿⣿⣿⣿⡆⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⢹⣿⢠⡶⠒⢶⠀⠀⣠⠒⠒⠢⡀⢿⣿⣿⣿⡇⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⣿⣿⠸⣄⣠⡾⠀⠀⠻⣀⣀⡼⠁⢸⣿⣿⣿⣿⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⠀⠀⠀
+%⠀⠀⠀⠀⠀⢰⣿⣿⠀⠀⠀⡔⠢⠤⠔⠒⢄⠀⠀⢸⣿⣿⣿⣿⡇⠀⠀⠀
+%⠀⠀⠀⠀⠀⢸⣿⣿⣄⠀⠸⡀⠀⠀⠀⠀⢀⡇⠠⣸⣿⣿⣿⣿⡇⠀⠀⠀
+%⠀⠀⠀⠀⠀⢸⣿⣿⣿⣷⣦⣮⣉⢉⠉⠩⠄⢴⣾⣿⣿⣿⣿⡇⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⢸⣿⣿⢻⣿⣟⢟⡁⠀⠀⠀⠀⢇⠻⣿⣿⣿⣿⣿⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⢸⠿⣿⡈⠋⠀⠀⡇⠀⠀⠀⢰⠃⢠⣿⡟⣿⣿⢻⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠸⡆⠛⠇⢀⡀⠀⡇⠀⠀⡞⠀⠀⣸⠟⡊⠁⠚⠌⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⡍⠨⠊⣒⠴⠀⡇⡴⠋⡋⢐⠐⠅⡀⠐⢠⠕⠂⢂
+
+% Documentación:
+% \stagedirection{fade in} - Cuando entra algo
+% \scene{int. engine room, night}{...} - insertar excena
+% \shot{int. oily corridor - "C" level}{...} - subesxcena
+% \dialogue{NOME}{...} - 
+% \sd{sometime in the future:} - escribir mm algo
+
+% scene: {XXT. LUGAR - TIRMPO}
+%         XXT:    INT, EXT, I/E
+%         tiempo: día, noche, Amanecer, atardecer, mediodía, anochecer
+
+% ------- AGREGAR AQUÍ LO DEL TELÉFONO ----------------------------------------------
+\stagedirection{Meses después...}
+
+\scene{EXT. Calles de la Ciudad - Día}{
+    El Caballero se pasea por las calles, vigilante. Mira a los lados; de un lado de la calle se ve a los panaderos haciendo pan en la panadería, del otro, una senora que vende flores. 
+    Todo parece estar en orden, hasta que pasa por un grupo de senoras que están murmurando preocupadas algo de un dragón en las cercanías de la ciudad. Mientras el caballero camina, escucha otras cosas parecidas acerca de un dragón que vive en una cueva de una montana cercana a la ciudad.
+    Un campesino aparece corriendo y gritando
+    \dialogue{CAMPESINO}{
+        El dragón vendrá pronto, corran por sus vidas !!! AAAAAA
+    } 
+    El Caballero mira cómo el campesino se va corriendo, después mira en dirección de la montana.
+}
+
+\scene{EXT. Pradera - Atardecer}{
+    El caballero golpea las riendas del caballo, este relincha fuertemente para después correr rápidamente.
+    A lo lejos, se ve al caballero cabalgando con el sol poniéndose de fondo.
+}
+\shot{EXT. Bosque - Atardecer}{
+    De nuevo el caballero cabalgando con el bosque de fondo.
+}
+\shot{EXT. montana - Atardecer}{
+    Caballero cabalgando cuesta arriba en dirección a la entrada de la cueva.
+}
+
+\scene{INT. Cueva en la montana}{
+    El Caballero llega finalmente a donde vive la Dragona. Entrando lentamente en la cueva, en la obscuridad, aparecen un par de ojos brillantes y lo miaran directamente. La dragona responde furiosa
+    \dialogue{DRAGONA}{
+        Grrr, hazme un favor, y lárgate de aquí.
+    }
+    \dialogue{CABALLERO}{
+        Atrás, bestia, no permitiré que toques esa ciudad.
+    }
+}
+
+
+
+% template ---------------------------------------------------------------------------
+\stagedirection{fade in}
+% \sd{sometime in the future:}
+
+\scene{int. engine room}{
+}
+
+\scene{int. engine cubicle}{Circular, jammed with instruments.
+All of them idle. Console chairs for two. Empty}
+\shot{int. oily corridor - "C" level}{
+    Long, dark. Empty. Turbos throbbing. No other movement
+}
+\shot{int. corridor - "A" level}{Long, empty}
+\shot{INT. INFIRMARY - "A" LEVEL}{
+Distressed ivory walls.
+All instrumentation at rest}
+
+\scene{INT. CORRIDOR TO BRIDGE - "A" LEVEL}{Black, empty}
+
+\dialogue{LAMBERT}{What time is it}
+\dialogue{KANE}{
+    (voice over)\\
+    What do you care
+}
+
+\end{document}

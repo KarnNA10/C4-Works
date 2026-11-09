@@ -1,0 +1,297 @@
+\documentclass[12pt]{article}
+
+\usepackage[paper=letterpaper, top=1.0in, bottom=1.0in, left=1.5in, right=1.0in]{geometry}
+\usepackage{courier}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc, shapes.geometric, decorations.pathmorphing, backgrounds, patterns}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{booktabs}
+
+\renewcommand{\familydefault}{\ttdefault}
+
+\fancypagestyle{scriptpage}{
+  \fancyhf{}
+  \fancyhead[R]{\footnotesize\textcolor{slate}{\thepage.}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% Scene counter
+\newcounter{scene}
+% Scene heading with automatic numbering
+\newcommand{\sceneheading}[1]{%
+  \refstepcounter{scene}%
+  \vspace{12pt}%
+  \noindent
+  \makebox[0pt][r]{\hspace{-12pt}\textbf{\thescene.}}%
+  \textbf{\MakeUppercase{#1}}%
+  \vspace{12pt}\par%
+}
+
+
+
+\newcommand{\actiontext}[1]{%
+  \noindent{\raggedright#1\par}\vspace{12pt}%
+}
+
+\newcommand{\charactername}[1]{%
+  \vspace{12pt}%
+  \noindent\hspace*{2.2in}\MakeUppercase{#1}\par%
+}
+
+\newcommand{\dialogueblock}[1]{%
+  \noindent\hspace*{1.0in}%
+  \begin{minipage}[t]{3.5in}%
+    \raggedright#1%
+  \end{minipage}%
+  \par\vspace{12pt}%
+}
+
+\newcommand{\parenthetical}[1]{%
+  \noindent\hspace*{1.6in}(#1)\par%
+}
+
+\newcommand{\transitiontext}[1]{%
+  \vspace{12pt}%
+  \noindent\hspace*{4.5in}\MakeUppercase{#1}\par%
+  \vspace{12pt}%
+}
+
+\begin{document}
+%⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⡿⢿⣿⣛⣟⣿⡿⢿⢿⣷⣦⡀⠀⠀⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⢰⣯⣷⣿⣿⣿⢟⠃⢿⣟⣿⣿⣾⣷⣽⣺⢆⠀⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⢸⣿⢿⣾⢧⣏⡴⠀⠈⢿⣘⣿⢿⣿⣿⣿⣿⡆⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⢹⣿⢠⡶⠒⢶⠀⠀⣠⠒⠒⠢⡀⢿⣿⣿⣿⡇⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⣿⣿⠸⣄⣠⡾⠀⠀⠻⣀⣀⡼⠁⢸⣿⣿⣿⣿⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⠀⠀⠀
+%⠀⠀⠀⠀⠀⢰⣿⣿⠀⠀⠀⡔⠢⠤⠔⠒⢄⠀⠀⢸⣿⣿⣿⣿⡇⠀⠀⠀
+%⠀⠀⠀⠀⠀⢸⣿⣿⣄⠀⠸⡀⠀⠀⠀⠀⢀⡇⠠⣸⣿⣿⣿⣿⡇⠀⠀⠀
+%⠀⠀⠀⠀⠀⢸⣿⣿⣿⣷⣦⣮⣉⢉⠉⠩⠄⢴⣾⣿⣿⣿⣿⡇⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⢸⣿⣿⢻⣿⣟⢟⡁⠀⠀⠀⠀⢇⠻⣿⣿⣿⣿⣿⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⢸⠿⣿⡈⠋⠀⠀⡇⠀⠀⠀⢰⠃⢠⣿⡟⣿⣿⢻⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠸⡆⠛⠇⢀⡀⠀⡇⠀⠀⡞⠀⠀⣸⠟⡊⠁⠚⠌⠀⠀⠀⠀
+%⠀⠀⠀⠀⠀⠀⡍⠨⠊⣒⠴⠀⡇⡴⠋⡋⢐⠐⠅⡀⠐⢠⠕⠂⢂
+
+%\thispagestyle{empty}
+%\vspace*{2in}
+
+%\begin{center}
+%\begin{tikzpicture}
+%  \draw[goldleaf, line width=0.6pt] (0,0) -- (\textwidth,0);
+%\end{tikzpicture}
+%\vspace{24pt}
+
+%\begin{tcolorbox}[
+%  colframe=navynight,
+%  colback=cream,
+%  boxrule=0.5pt,
+%  arc=4pt,
+%  width=0.75\textwidth,
+%  center,
+%  before skip=0pt,
+%  after skip=0pt,
+%]
+%\begin{center}
+%{\fontsize{28}{34}\selectfont\color{navynight}\textbf{EL CABALLERO Y LA DRAGONA}}\\[18pt]
+%{\fontsize{12}{16}\selectfont\color{slate}An Original Screenplay}\\[14pt]
+%{\color{goldleaf}\rule{1.8in}{0.5pt}}\\[14pt]
+%%{\fontsize{12}{16}\selectfont\color{navynight}Written by}\\[6pt]
+%{\fontsize{14}{18}\selectfont\color{navynight}\textbf{Karen Navarro}}
+%\end{center}
+%\end{tcolorbox}
+
+%\vspace{24pt}
+%\begin{tikzpicture}
+%  \draw[goldleaf, line width=0.6pt] (0,0) -- (\textwidth,0);
+%\end{tikzpicture}
+
+%\vspace{36pt}
+%{\color{slate}\faEnvelope\enspace jordan@parkwriting.com}\\[8pt]
+%{\color{slate}\faPhone\enspace 0126310361\\}[8pt]
+%{\color{slate}\faMapMarker\enspace UNIVA GDL}
+
+%\vspace{48pt}
+%{\color{slate}\footnotesize Draft: 04 NOV 2026}
+%\end{center}
+
+
+%ADDED TITLE PAGE ____________________________
+\begin{titlepage}
+	\centering
+    \filmtitle{El Caballero y la Dragona}
+    \vspace{1cm}
+    by\\
+    \vspace{1cm}
+    Karen Navarro\\
+    \vspace{3cm}
+    Based on screenplay\\
+    \vspace{0.5cm}
+    by\\
+    \vspace{0.5cm}
+    Karen Navarro\\
+    \vspace{1cm}
+    Story by\\
+    \vspace{0.5cm}
+    Karen Navarro
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+%ADDED TITLE PAGE ____________________________
+
+\newpage
+
+\pagestyle{scriptpage}
+
+% ---------------- - - - - - - -
+\sceneheading{EXT. CAMPO DE BATALLA --- ATARDECER}
+\actiontext{se ve un campo de batalla con muchos cuerpos sobre una colina, está muy nublado. En la cima de la colina, a lo lejos, se ven dos figuras; la de la reina y el caballero}
+\actiontext{El Caballero se hinca en una rodilla frente a la reina, esta saca una espada y la pone en cada uno de sus hombros, nombrándolo caballero}
+
+\charactername{Caballero}
+\parenthetical{Levantando la cabeza}
+\dialogueblock{No la defraudaré, mi Reina.}
+
+% ---------------- - - - - - - -
+\transitiontext{CUT TO:}
+\sceneheading{EXT. PATIO DEL CASTILLO --- MAñANA}
+\actiontext{el caballero levanta su espada, amenazante. Mira a su objetivo (un muñeco de paja), para después lanzar un grito y darle un espadazo, pero el arma se le resbala de las manos y sale volando, rompiendo una ventana del castillo.}
+
+% ---------------- - - - - - - -
+\sceneheading{EXT. BOSQUE --- DÍA}
+\actiontext{El caballero se ve cabalgando velozmente por el bosque.}
+\actiontext{Tras llegar a un lugar más claro (sin albores), el caballo relincha y se detiene de golpe, frenando apenas unos centímetros antes de un precipicio. Se detiene tan de golpe que el caballero sale volando por el precipicio }
+
+\charactername{Caballero}
+\parenthetical{gritando}
+\dialogueblock{AAAAAAAAAAAAAAAAAAAAaaaaa....}
+
+% ---------------- - - - - - - -
+\sceneheading{INT. HOSPITAL --- TARDE}
+\actiontext{el caballero está en una cama de hospital que mira al atardecer, con el cuerpo completamente vendado.\\Una monja entra con una charola con comida.}
+
+\charactername{Monja}
+\dialogueblock{Le traje sopa, Caballero.}
+\charactername{Caballero}
+\dialogueblock{Garcias, hermana. Podría dejarla en la mesita?}
+\charactername{Monja}
+\dialogueblock{No quiere que le ayude a comer? Apenas puede moverse con tanto vendaje.}
+\charactername{Caballero}
+\dialogueblock{No se preocupe por eso, y le pido que no tenga lastima por mi. Aún soy perfectamente capaz de comer por mi mismo.}
+\charactername{Monja}
+\dialogueblock{Está bien, entonces me retiro.}
+
+\actiontext{La monja deja la charola con la sopa y los cubiertos sobre la mesa junto a la cama del caballero y sale del cuarto.}
+\actiontext{El caballero toma una cucharada de la sopa . Con la mano moviendose muy lentamente y temblando, trata de acercarse la cuchara para tomársela, pero en eso se le cae al piso.\\El caballero solo suspira mientras ve la cuchara y el pequeño charco en el piso.}
+
+
+
+% ---------------- - - - - -  -  -
+% Ummm parte acto2?
+% ---------------- - - - - -  -  -
+\transitiontext{CUT TO:}
+\transitiontext{"Meses después..."}
+
+\sceneheading{EXT. CALLES DE LA CIUDAD --- DÍA}
+\actiontext{El Caballero se pasea por las calles, vigilante. Mira a los lados; de un lado de la calle se ve a los panaderos haciendo pan en la panadería, del otro, una senora que vende flores. \\
+Todo parece estar en orden, hasta que pasa por un grupo de senoras que están murmurando preocupadas algo de un dragón en las cercanías de la ciudad. Mientras el caballero camina, escucha otras cosas parecidas acerca de un dragón que vive en una cueva de una montana cercana a la ciudad.\\ Un campesino aparece corriendo y gritando}
+
+\charactername{Campesino}
+\parenthetical{Gritando}
+\dialogueblock{El dragón vendrá pronto, corran por sus vidas !!! AAAAAA.}
+
+\actiontext{El Caballero mira cómo el campesino se va corriendo, después mira en dirección de la montana.}
+
+% ---------------- - - - - -  -  -
+\sceneheading{EXT. PRADERA --- ATARDECER}
+\actiontext{El caballero golpea las riendas del caballo, este relincha fuertemente para después correr rápidamente.}
+\actiontext{A lo lejos, se ve al caballero cabalgando con el sol poniéndose de fondo.}
+\sceneheading{EXT. BOSQUE --- ATARDECER}
+\actiontext{De nuevo el caballero cabalgando con el bosque de fondo.}
+\sceneheading{EXT. MONTANA --- ATARDECER}
+\actiontext{Caballero cabalgando cuesta arriba en dirección a la entrada de la cueva.}
+
+% ---------------- - - - - -  -  -
+\sceneheading{INT. CUEVA EN LA MONTANA --- ATARDECER }
+\actiontext{El Caballero llega finalmente a donde vive la Dragona. Entrando lentamente en la cueva, en la obscuridad, aparecen un par de ojos brillantes y lo miaran directamente. La dragona responde furiosa}
+
+\charactername{Dragona}
+\parenthetical{Rugiendo}
+\dialogueblock{Grrr, hazme un favor, y lárgate de aquí.}
+
+\charactername{Caballero}
+\dialogueblock{Atrás, bestia, no permitiré que toques esa ciudad.}
+
+\charactername{Dragona}
+\dialogueblock{No seas tonto. Esa ciudad no merece la pena. Además, todos se burlan de tu incompetencia. Nadie como tú podría detenerme jamás grrrrrrrooaaaaaaahhhhhhhh.}
+
+\charactername{Caballero}
+\dialogueblock{SILNECIO. Todas estas personas tienen vida y merecen vivirlas. Mi deber es protegerlos sin importar qué, y sacrificaré mi vida si hace falta. AAAAAAAA}
+
+\actiontext{EL caballero entonces lanaza su espada en la dirección de la dragona, pero esta solo rebota en sus escamas y cae a sus pies.}
+\actiontext{La Dragona primero mira la espada y después al caballero.}
+
+% ---------------- - - - - -  -  -
+\transitiontext{Cut To:}
+\transitiontext{Tiempo después...}
+
+\sceneheading{EXT. CIUDAD --- DÍA }
+\actiontext{Se ve la plaza del pueblo con varias personas reunidas, murmurando vagamente sobre el caballero y lo que pudo haberle pasado.}
+
+\charactername{Narrador}
+\parenthetical{Voice over}
+\dialogueblock{El caballero jamás volvió a la ciudad. Lo esperaron por semanas después de su partida a enfrentar al dragón, pero nadio volvió a verlo ni a él ni a la dragona. El pueblo lo dio por muerto en combate y comenzaron a escribir canciones sobre sus hazanas.}
+\actiontext{Se ven algunos bardos reunidos tocando varios instrumentos y cantando canciones. Después, se ve a un artista dibujando una imagen del caballero en su caballo cortando el cuello de la dragona con su espada. Finalmente, se ve a un grupo de senoras vestidas de negro llorando su pérdida.}
+\actiontext{Finalmente, se ve a un grupo de monjas}
+\charactername{Monja}
+\dialogueblock{Oh, pobre Caballero. No era bueno peleando, pero... era una gran persona. No merecía tantas burlas}
+\actiontext{Se ve a la monja mirando al cielo, después se ve el cielo despejado del día}
+
+\transitiontext{Cut To:}
+\transitiontext{Cielo nocturno}
+% _______________ _ _ _ _ __ _ _ __ __
+\sceneheading{INT. CUEVA EN LA MONTANA --- NOCHE}
+\actiontext{Se ven las paredes de la cueva, iluminadas por una luz cálida y tapizadas de dibujos, la mayoría de ellos mostrando imágenes de la dragona y el caballero. Después, se ve al caballero dibujando sobre una mesa en un pergamino, mientras la dragona mira por encima de su hombro. Los dos ríen fuertemente}
+
+\charactername{Caballero}
+\dialogueblock{Jajaja, esta fue la vez que salí volando del caballo}
+
+\charactername{Dragona}
+\dialogueblock{Jajaj, awwww, pobrecito}
+
+\charactername{Caballero}
+\dialogueblock{Ese día me rompí todos los huesos que se me podían romper. Unos monjes me encontraron y me llevaron al hospital del monasterio. Tardé meses para estar bien de nuevo.}
+
+\charactername{Dragona}
+\dialogueblock{Awwww}
+
+\actiontext{La dragona toma al Caballero de su asiento y le da un abrazo. El Caballero la abraza de regreso}
+
+\charactername{Dragona}
+\dialogueblock{Sabes? Quería atacar tu ciudad por su oro y riquezas, pero en su lugar me dieron algo muchísimo mejor.}
+
+\actiontext{Se miran a los ojos y se besan.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\transitiontext{FADE OUT.}
+
+\end{document}
